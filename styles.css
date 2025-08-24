@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(40, 39, 55);
+  margin: 0;
+}
+.auto-search {
+  height: 70px;
+  background-color: rgb(31, 31, 43);
+  padding-top: 18px;
+  border-bottom: 2px solid rgb(51, 52, 73);
+  .search {
+    z-index: 100;
+    padding: 5px;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    .search_place {
+      padding-left: 8px;
+      height: 36px;
+      width: 100%;
+      border: 3px solid rgb(139, 77, 155);
+      border-radius: 8px;
+    }
+    .search_place:focus {
+      outline: none;
+    }
+    .search_btn {
+      width: 38px;
+      height: 33px;
+      position: absolute;
+      right: 6px;
+      top: 6px;
+      background-color: rgb(139, 77, 155);
+      border: none;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+  }
+  .search_repository_selector {
+    width: 100%;
+  }
+  .repository_variants {
+    position: absolute;
+    width: 495px;
+    height: auto;
+    padding-top: 26px;
+    z-index: -100;
+    background-color: rgb(51, 52, 73);
+    border-radius: 15px;
+    border: 2px solid rgb(139, 77, 155);
+    top: 10px;
+    left: 6px;
+  }
+}
+.container_favorite {
+  margin: 0 auto;
+  width: 750px;
+  height: 100vh;
+  border-left: 2px solid rgb(51, 52, 73);
+  border-right: 2px solid rgb(51, 52, 73);
+  background-color: rgb(34, 34, 46);
+}
+.card:hover {
+  background-color: rgb(144, 79, 160);
+}
+.card:active {
+  background-color: rgb(120, 70, 133);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 5px 0 5px 10px;
+  border: 1px solid rgb(89, 27, 105);
+  color: rgb(208, 175, 196);
+  /* > {
+    margin: 0;
+  } */
+}
+.name {
+  height: auto;
+  margin: 5px;
+}
+.stars {
+  height: auto;
+  margin: 5px;
+}
+.author {
+  height: auto;
+  margin: 5px;
+}
+.favorite_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 5px 0 5px 10px;
+  background-color: rgb(51, 52, 73);
+  border: 1px solid rgb(89, 27, 105);
+  color: rgb(208, 175, 196);
+}
+.favorite_card:hover {
+  background-color: rgb(144, 79, 160);
+}
+.favorite_card:active {
+  background-color: rgb(120, 70, 133);
+}
+
+.delete_favorite {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}

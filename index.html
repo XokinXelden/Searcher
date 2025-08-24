@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="auto-search">
+      <form class="search">
+        <input
+          onkeydown="enterBlock(event)"
+          type="search"
+          class="search_place"
+          placeholder="Я тебя найду..."
+        />
+        <button class="search_btn" type="submit"></button>
+        <div class="repository_variants"></div>
+      </form>
+    </div>
+    <div class="container_favorite"></div>
+  </body>
+  <script src="js.js"></script>
+</html>
